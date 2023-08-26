@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "a589c249-3c1d-49a0-9f1c-6118c46f8057",
+		"name": "PRUEBA 3P",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28046570"
+	},
+	"item": [
+		{
+			"name": "Branches",
+			"item": [
+				{
+					"name": "List Branches",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/branches",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"branches"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Branch",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"64e84eb9f5783b17e730011x\",\r\n    \"code\":\"23ee0a36-5b9c-4e8f-9725-b1de280756ef\",\r\n    \"name\":\"Agencia San Francisco\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/branches",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"branches"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
